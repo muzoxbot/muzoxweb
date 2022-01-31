@@ -1,0 +1,1456 @@
+<!--
+    Made by Harsh
+    Scratchified
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<meta name="description" content="Experience top quality music for free! Muzox allows you to listen to your
+    favourite music without any second-rate quality!">
+	<meta name="keywords"
+		content="Muzox, Muzox, discord bot website, best music bot, discord, best music bot discord">
+	<meta name="title" content="Muzox Website">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/logo.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/logo.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/logo.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/logo.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/logo.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/logo.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="aassets/logo.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/logo.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/logo.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="assets/logo.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/logo.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/logo.png">
+	<link rel="manifest" href="assets/logo.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/logo.png">
+	<meta name="theme-color" content="#ee5903">
+	<title>Muzox - The Best Music Bot For Discord</title>
+	<link rel="stylesheet" href="@chunk.css" />
+	<link rel="stylesheet" href="@animations.all.css" />
+	<link rel="stylesheet" href="@queries.css">
+	<link rel="stylesheet" href="commands/commands-chunk.css">
+	<link rel="shortcut icon" href="assets/logo.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+	<noscript>Whoops! Seems like you have JavaScript Disabled in your browser! Please disable it to use Muzox's 
+		Site!</noscript>
+	<div class="loader" id="preloader">
+		<strong>
+			<div class="dot-pulse"></div>
+		</strong>
+	</div>
+	<lol class="navv">
+		<nav class="navbar" id="top">
+			<div class="logo">
+				<a href="commands.html#top" rel="noreferrer"><img src="assets/logo.png" alt=""
+						class="logo-img logo-img-animation" /></a>
+			</div>
+			<ul class="nav-items">
+				<li><a href="index.html" class="nav-links">Home</a></li>
+				<li><a href="commands.html#" class="nav-links" aria-current="page">Commands</a></li>
+				<li><a href="https://discord.gg/8dX6RFPjY3" target="_blank" class="nav-links">Support</a></li>
+				<li><a href="commands.html#" class="nav-links">Donate</a></li>
+			</ul>
+			<div class="burger">
+				<span class="bars bar1"></span>
+				<span class="bars bar2"></span>
+				<span class="bars bar3"></span>
+			</div>
+		</nav>
+	</lol>
+
+	<div class="commands-section">
+		<div class="search">
+			<input type="text" class="search-bar" id="inputCommand" onkeyup="searchCommands()" placeholder="Search..">
+		</div>
+		<div class="tabs-switcher">
+			<ul class="tabs-list">
+				<li class="tab-item tab active-tab" data-tab-target="#all">All</li>
+			</ul>
+		</div>
+		<div class="accordin-info">
+			Muzox prefix is variable and can be set by using <code>SETPREFIX</code> command. You can find the
+			prefix by pinging the bot. Muzox also supports <code>/</code> commands!
+		</div>
+		<h1 id="bruh"></h1>
+
+		<div id="all" class="active-tab" data-tab-content>
+
+		
+			
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>help</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Returns all Commmands, or one specific command</p>
+					<p><strong>Usage</strong>: <code>help</code>, <code>help &lt;command&gt;</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>invite</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Gives you an Invite link for this Bot</p>
+					<p><strong>Usage</strong>: <code>invite</code>, <code>inv</code>, <code>add</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>ping</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Gives you information on how fast the Bot can respond to you</p>
+					<p><strong>Usage</strong>: <code>ping</code>, <code>latency</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>shards</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Shows Info About Current Shard.</p>
+					<p><strong>Usage</strong>: <code>stats</code>, <code>musicstats</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>uptime</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Returns the duration on how long the Bot is online</p>
+					<p><strong>Usage</strong>: <code>uptime</code>, <code>u</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>donate</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Gives you donate link of Muzox</p>
+					<p><strong>Usage</strong>: <code>vote</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>vote</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Gives you donate link of Muzox</p>
+					<p><strong>Usage</strong>: <code>vote</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>24/7</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Enable 24/7 mode in your server</p>
+					<p><strong>Usage</strong>: <code>24/7</code>, <code>autojoin</code></p>
+					<p><strong>Permissions</strong>: Administrator</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>announce</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Toggles the announcing of Now playing messages</p>
+					<p><strong>Usage</strong>: <code>toggleannounce</code>, <code>u</code></p>
+					<p><strong>Permissions</strong>: Manage Server</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>prefix</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Let's you change the Prefix of the BOT</p>
+					<p><strong>Usage</strong>: <code>prefix &lt;new prefix&gt;</code></p>
+					<p><strong>Permissions</strong>: Manage Server</p>
+				</div>
+			</div>
+
+
+
+
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>8d</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a 8D Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>8d</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>bassboost</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Changes the Bass gain to the current track</p>
+					<p><strong>Usage</strong>: <code>bassboost</code>, <code>bb</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>demon</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a demon Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>chimpmunk</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>reset</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>to reset all the filters</p>
+					<p><strong>Usage</strong>: <code>clearfilter</code>, <code>cf</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>funny</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a funny Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>darthvader</code>, <code>dv</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>karaoke</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a karaoke Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>karaoke</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>nightcore</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a Nightcore Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>nightcore</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>pitch</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Allows you to change the PITCH of the current TRACK.</p>
+					<p><strong>Usage</strong>: <code>pitch &lt;multiplicator&gt;</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>speed</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Allows you to change the speed of current playing track</p>
+					<p><strong>Usage</strong>: <code>!!speed &lt;Multiplicator between 0 and 3&gt; </code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>treblebass</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a treblebass Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>treblebass</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>vaporwave</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a Vaporwave Filter</p>
+					<p><strong>Usage</strong>: <code>vaporwave</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+
+		
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>autoplay</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Toggles Autoplay on/off</p>
+					<p><strong>Usage</strong>: <code>autoplay</code>, <code>ap</code>, <code>toggleauto</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>previous</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Plays previous song</p>
+					<p><strong>Usage</strong>: <code>back</code>, <code>pre</code>, <code>previous</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+
+		
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>forward</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Seeks a specific amount of Seconds forwards</p>
+					<p><strong>Usage</strong>: <code>forward</code>, <code>fwd</code>, <code>seekforwards</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+	
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>join</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Joins the Bot in your Channel</p>
+					<p><strong>Usage</strong>: <code>join</code>, <code>j</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>loop</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Repeats the current song</p>
+					<p><strong>Usage</strong>: <code>repeat</code>, <code>loop&lt;queue | song&gt;</code>,
+						<code>l</code>
+					</p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>leave</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Stops the song and leaves the voice channel</p>
+					<p><strong>Usage</strong>: <code>repeat</code>, <code>loop&lt;queue | song&gt;</code>,
+						<code>l</code>
+					</p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>lyrics</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Shows The Lyrics of the track</p>
+					<p><strong>Usage</strong>: <code>lyrics</code>, <code>ly</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>move</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Change the position of a track in the queue</p>
+					<p><strong>Usage</strong>: <code>movetrack &lt;frm&gt; &lt;to&gt;</code>, <code>movet</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>nowplaying</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Shows information about the current Song</p>
+					<p><strong>Usage</strong>: <code>nowplaying</code>, <code>np</code>, <code>current</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>pause</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Pauses the Current Song</p>
+					<p><strong>Usage</strong>: <code>pause</code>, <code>break</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>play</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Plays a song from youtube</p>
+					<p><strong>Usage</strong>: <code>play &lt;Song / URL&gt;</code>, <code>p</code>, <code>l</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>queue</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Shows the current queue</p>
+					<p><strong>Usage</strong>: <code>q</code>, <code>list</code>, <code>queue</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>clear</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>CLears the queue</p>
+					<p><strong>Usage</strong>: <code>q</code>, <code>list</code>, <code>queue</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>remove</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Removes a track from the Queue</p>
+					<p><strong>Usage</strong>: <code>q</code>, <code>list</code>, <code>queue</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>replay</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Replay the current song</p>
+					<p><strong>Usage</strong>: <code>replay</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>resume</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Resumes the Current paused Song</p>
+					<p><strong>Usage</strong>: <code>resume</code>, <code>r</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>rewind</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Shows the current queue</p>
+					<p><strong>Usage</strong>: <code>rewind &lt;duration in seconds&gt;</code>,
+						<code>rew &lt;duration in seconds</code>
+					</p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>search</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Searches a song from youtube</p>
+					<p><strong>Usage</strong>: <code>search &lt;song / url&gt;</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>seek</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Changes the position(seek) of the Song</p>
+					<p><strong>Usage</strong>: <code>seek &lt;duration in seconds&gt;</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>search</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Searches a song from youtube</p>
+					<p><strong>Usage</strong>: <code>search &lt;song / url&gt;</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>shuffle</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Shuffles the Queue</p>
+					<p><strong>Usage</strong>: <code>shuffle</code>, <code>mix</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>skip</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Forces to skip the current song</p>
+					<p><strong>Usage</strong>: <code>skip</code>, <code>s</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>stop</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Stops current track and leaves the channel</p>
+					<p><strong>Usage</strong>: <code>stop</code>, <code>leave</code>, <code>dis</code>,
+						<code>disconnect</code>, <code>dc</code>
+					</p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>volume</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Changes the Volume</p>
+					<p><strong>Usage</strong>: <code>volume &lt;0-150&gt;</code>, <code>vol &lt;0-150&gt;</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+		<div data-tab-content id="settings">
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>24/7</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Enable 24/7 mode in your server</p>
+					<p><strong>Usage</strong>: <code>24/7</code>, <code>autojoin</code></p>
+					<p><strong>Permissions</strong>: Administrator</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>announce</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Toggles the announcing of Now playing messages</p>
+					<p><strong>Usage</strong>: <code>toggleannounce</code>, <code>u</code></p>
+					<p><strong>Permissions</strong>: Manage Server</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>prefix</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Let's you change the Prefix of the BOT</p>
+					<p><strong>Usage</strong>: <code>prefix &lt;new prefix&gt;</code></p>
+					<p><strong>Permissions</strong>: Manage Server</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>pruning</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Toggles pruning. If its enabled "Now Playing" messages will be deleted automatically when song
+						finishs.</p>
+					<p><strong>Usage</strong>: <code>pruning</code>, <code>togglepruning</code></p>
+					<p><strong>Permissions</strong>: Manage Server</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>reset</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Resets / Deletes all of the Setups as well as the prefix!</p>
+					<p><strong>Usage</strong>: <code>reset</code>, <code>hardreset</code></p>
+					<p><strong>Permissions</strong>: Administrator</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>set-changelog</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Sets a channel to recieve changelogs of Soul Music</p>
+					<p><strong>Usage</strong>: <code>set-channgelog &lt;#soul-changelogs&gt;</code>,
+						<code>s-cl&lt;#soul-changelogs&gt;</code>
+					</p>
+					<p><strong>Permissions</strong>: Administrator</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>setdj</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Add or remove dj roles</p>
+					<p><strong>Usage</strong>: <code>setdj add &lt;@DJ&gt;</code>,
+						<code>setdj remove &lt;@DJ&gt;</code>, <code>setdj reset</code>
+					</p>
+					<p><strong>Permissions</strong>: Manage Server</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>setdjonly</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Set's a Command to the DJ Only State or non DJ Only State</p>
+					<p><strong>Usage</strong>: <code>adddjonly &lt;skip&gt;</code>, <code>djonly &lt;skip&gt;</code>,
+						<code>toggledjonly &lt;skip&gt;</code>, <br><br><code
+							style="transform: translateY(10px)">toggledjonlycmd &lt;skip&gt;</code>
+					</p>
+					<p><strong>Permissions</strong>: Manage Server</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>settc</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Restrict some text channels to use bot commands there</p>
+					<p><strong>Usage</strong>: <code>settc &lt;#bot-commands&gt;</code>, <code>settc reset</code></p>
+					<p><strong>Permissions</strong>: Manage Server</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>settings</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Shows your server settings</p>
+					<p><strong>Usage</strong>: <code>settings</code>, <code>musicsettings</code></p>
+					<p><strong>Permissions</strong>: Manage Server</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>setup</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Makes a unique song request channel</p>
+					<p><strong>Usage</strong>: <code>setup</code></p>
+					<p><strong>Permissions</strong>: Administrator</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>setvc</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Restrict bot for a voice channel</p>
+					<p><strong>Usage</strong>: 
+                        <code>setvc add &lt;voice channel id&gt;</code>, 
+                        <code>setvc remove id&lt;voice channel&gt;</code>, 
+                        <br><br><code style="transform: translateY(10px)">setvc reset</code>
+                    </p>
+					<p><strong>Permissions</strong>: Manage Server</p>
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+
+		<div data-tab-content id="filters">
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>8d</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a 8D Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>8d</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>bassboost</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Changes the Bass gain to the current track</p>
+					<p><strong>Usage</strong>: <code>bassboost</code>, <code>bb</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>chimpmunk</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a Chipmunk Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>chimpmunk</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>clearfilter</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Clears the applied filter of the current track</p>
+					<p><strong>Usage</strong>: <code>clearfilter</code>, <code>cf</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>darthvader</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a Darthvader Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>darthvader</code>, <code>dv</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>earrape</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies an earrape filter to the current track (Vol. Warning)</p>
+					<p><strong>Usage</strong>: <code>earrape</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>electronic</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a electronic Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>electronic</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>karaoke</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a karaoke Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>karaoke</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>nightcore</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a Nightcore Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>nightcore</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>pitch</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Allows you to change the PITCH of the current TRACK.</p>
+					<p><strong>Usage</strong>: <code>pitch &lt;multiplicator&gt;</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>pop</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies Pop Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>pop</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>rate</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Allows you to change the rate/speed of the current track</p>
+					<p><strong>Usage</strong>: <code>rate &lt;multiplicator between 1 and 3&gt;</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>rock</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a Rock Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>rock</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>slowmo</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Allows you to slow down the current track</p>
+					<p><strong>Usage</strong>: <code>slow</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>soft</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a soft Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>soft</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>speed</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Allows you to change the speed of current playing track</p>
+					<p><strong>Usage</strong>: <code>!!speed &lt;Multiplicator between 0 and 3&gt; </code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>treblebass</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a treblebass Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>treblebass</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>tremolo</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a Tremolo Filter to the current track</p>
+					<p><strong>Usage</strong>: <code>tremolo</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>vaporwave</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a Vaporwave Filter</p>
+					<p><strong>Usage</strong>: <code>vaporwave</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>vibrate</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a Vibrato Filter</p>
+					<p><strong>Usage</strong>: <code>vibrate</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>vibrato</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Applies a vibrato Filter</p>
+					<p><strong>Usage</strong>: <code>vibrato</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+
+
+		<div data-tab-content id="basic">
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>djmode</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Shows if there is a DJ-Only Mode / not and all Dj Settings..</p>
+					<p><strong>Usage</strong>: <code>djmode</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>hasvoted</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Shows did you voted soul music or not</p>
+					<p><strong>Usage</strong>: <code>hasvoted</code>, <code>hasvoted &lt;@user&gt;</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>help</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Returns all Commmands, or one specific command</p>
+					<p><strong>Usage</strong>: <code>help</code>, <code>help &lt;command&gt;</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>invite</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Gives you an Invite link for this Bot</p>
+					<p><strong>Usage</strong>: <code>invite</code>, <code>inv</code>, <code>add</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>ping</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Gives you information on how fast the Bot can respond to you</p>
+					<p><strong>Usage</strong>: <code>ping</code>, <code>latency</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>stats</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Shows music stats, like amount of commands and played songs etc.</p>
+					<p><strong>Usage</strong>: <code>stats</code>, <code>musicstats</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>uptime</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Returns the duration on how long the Bot is online</p>
+					<p><strong>Usage</strong>: <code>uptime</code>, <code>u</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>vote</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Gives you vote link of soul music</p>
+					<p><strong>Usage</strong>: <code>vote</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+		</div>
+
+		<div data-tab-content id="music">
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>autoplay</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Toggles Autoplay on/off</p>
+					<p><strong>Usage</strong>: <code>autoplay</code>, <code>ap</code>, <code>toggleauto</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>back</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Plays previous song</p>
+					<p><strong>Usage</strong>: <code>back</code>, <code>pre</code>, <code>previous</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>clearqueue</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Cleares the Queue</p>
+					<p><strong>Usage</strong>: <code>clearqueue</code>, <code>clearqu</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>forward</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Seeks a specific amount of Seconds forwards</p>
+					<p><strong>Usage</strong>: <code>forward</code>, <code>fwd</code>, <code>seekforwards</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>grab</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Saves the current playing song to your Direct Messages</p>
+					<p><strong>Usage</strong>: <code>grab</code>, <code>yoink</code>, <code>save</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>join</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Joins the Bot in your Channel</p>
+					<p><strong>Usage</strong>: <code>join</code>, <code>j</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>loop</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Repeats the current song</p>
+					<p><strong>Usage</strong>: <code>repeat</code>, <code>loop&lt;queue | song&gt;</code>,
+						<code>l</code>
+					</p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>lyrics</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Shows The Lyrics of the track</p>
+					<p><strong>Usage</strong>: <code>lyrics</code>, <code>ly</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>movebot</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Moves you to the BOT, if playing something</p>
+					<p><strong>Usage</strong>: <code>movebot</code></p>
+					<p><strong>Permissions</strong>: Move Members</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>moveme</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Moves you to the BOT, if playing something</p>
+					<p><strong>Usage</strong>: <code>moveme</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>movetrack</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Move a track to a new position in queue</p>
+					<p><strong>Usage</strong>: <code>movetrack &lt;frm&gt; &lt;to&gt;</code>, <code>movet</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>nowplaying</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Shows information about the current Song</p>
+					<p><strong>Usage</strong>: <code>nowplaying</code>, <code>np</code>, <code>current</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>pause</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Pauses the Current Song</p>
+					<p><strong>Usage</strong>: <code>pause</code>, <code>break</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>play</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Plays a song from youtube</p>
+					<p><strong>Usage</strong>: <code>play &lt;Song / URL&gt;</code>, <code>p</code>, <code>l</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>playtop</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Adds a song with the given name/url on the top of the queue</p>
+					<p><strong>Usage</strong>: <code>playtop &lt;Song Name / URL&gt;</code>, <code>pt</code>,
+						<code>ptop</code>
+					</p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>queue</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Shows the current queue</p>
+					<p><strong>Usage</strong>: <code>q</code>, <code>list</code>, <code>queue</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>remove</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Removes a track from the Queue</p>
+					<p><strong>Usage</strong>: <code>q</code>, <code>list</code>, <code>queue</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>replay</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Replay the current song</p>
+					<p><strong>Usage</strong>: <code>replay</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>resume</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Resumes the Current paused Song</p>
+					<p><strong>Usage</strong>: <code>resume</code>, <code>r</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>rewind</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Shows the current queue</p>
+					<p><strong>Usage</strong>: <code>rewind &lt;duration in seconds&gt;</code>,
+						<code>rew &lt;duration in seconds</code>
+					</p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>search</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Searches a song from youtube</p>
+					<p><strong>Usage</strong>: <code>search &lt;song / url&gt;</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>seek</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Changes the position(seek) of the Song</p>
+					<p><strong>Usage</strong>: <code>seek &lt;duration in seconds&gt;</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>search</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Searches a song from youtube</p>
+					<p><strong>Usage</strong>: <code>search &lt;song / url&gt;</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>shuffle</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Shuffles the Queue</p>
+					<p><strong>Usage</strong>: <code>shuffle</code>, <code>mix</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>skip</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Forces to skip the current song</p>
+					<p><strong>Usage</strong>: <code>skip</code>, <code>s</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>skipto</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Skips to a specific Track</p>
+					<p><strong>Usage</strong>: <code>skipto &lt;track number&gt;</code>,
+						<code>jump &lt;track number&gt;</code>
+					</p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>stop</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Stops current track and leaves the channel</p>
+					<p><strong>Usage</strong>: <code>stop</code>, <code>leave</code>, <code>dis</code>,
+						<code>disconnect</code>, <code>dc</code>
+					</p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>volume</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Changes the Volume</p>
+					<p><strong>Usage</strong>: <code>volume &lt;0-150&gt;</code>, <code>vol &lt;0-150&gt;</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+
+			<div class="accordion">
+				<div class="accordion__intro">
+					<h4>voteskip</h4><span class="accordion__intro-arrow">〱</span>
+				</div>
+				<div class="accordion__content">
+					<p>Lets you vote for skipping by reacting on message the current track</p>
+					<p><strong>Usage</strong>: <code>voteskip</code>, <code>vs</code></p>
+					<p><strong>Permissions</strong>: None</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="commands/accordin.js" defer></script>
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+	<div class="footer-wrap">
+		<footer class="footer">
+	
+		
+		</footer>
+		<footer class="copyright">
+			
+			<p class="credit"><i class="bi bi-code-slash"></i> and design by Harsh</p>
+		</footer>
+	</div>
+	<script src="chunk-main.js"></script>
+
+</html>
