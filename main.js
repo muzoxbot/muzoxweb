@@ -4,7 +4,7 @@ $(document).ready(function () {
     var answer = container.find(".answer");
     var trigger = container.find(".faq-t");
 
-    answer.slideToggle(200);
+    answer.slideToggle(150);
 
     if (trigger.hasClass("faq-o")) {
       trigger.removeClass("faq-o");
